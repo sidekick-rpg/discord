@@ -1,0 +1,32 @@
+{
+  "name": "sk-discord",
+  "version": "1.0.0",
+  "description": "Sidekick Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "coverage": "node --experimental-vm-modules node_modules/.bin/jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidekick-rpg/discord.git"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/sidekick-rpg/discord/issues"
+  },
+  "homepage": "https://github.com/sidekick-rpg/discord#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "discord-command-parser": "^1.5.3",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.20",
+    "sk-commandments": "github:sidekick-rpg/commandments#scaffold-initial",
+    "sk-module-hero": "github:sidekick-rpg/module-hero#scaffold-initial"
+  },
+  "type": "module"
+}
