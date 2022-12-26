@@ -66,7 +66,7 @@ const attack = new Commandments.Command('attack', 'Attack using combat values an
 		}
 	})
 
-	if (result.damage.length > 0) {
+	if (result.damage && result.damage.length > 0) {
 		result.damage.forEach(damage => {
 			console.dir(damage)
 			console.dir(damage.rolls)
@@ -80,9 +80,9 @@ const attack = new Commandments.Command('attack', 'Attack using combat values an
 		})
 	}
 
-	if (result.knockback !== null) {
-		response.push(`Knockback details here`)
-	}
+	/*if (result.knockback !== null || result.knockback !== undefined) {
+		response.push(['Knockback:', result.knockback.down ? 'down' : 'not down', result.knockback.distance ? `${result.knockback.distance} meters` : '0 meters'].join(' '))
+	}*/
 
 	return response.join("\n")
 })
